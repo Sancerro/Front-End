@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+nav a {
+    color: seashell;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+#logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav {
+    margin-left: auto;
+  }
+  
+nav ul {
+    display: flex;
+    list-style: none;
+ 
+}
+  
+nav li {
+    margin-right: 30px;
+  }
+
+nav li:last-child{
+    margin-right: 5px;
+  }
+  
+nav li:last-child {
+    margin-left: auto;
+  }
+  
+main{
+    margin-top: 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#background-image{
+    width: 1200px;
+}
+
+#banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: black;
+    width: 100%;
+}
+
+#tea-of-the-month{
+    text-align: center;
+    width: 1000px;
+    display: inline-block;
+}
+
+.tea-image{
+    width: 300px;
+    height: 200px;
+}
+
+
+.tea-image-container{
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.tea-image-container:not(:nth-child(3n)):last-child {
+    margin-right: 0;
+  }
+
+h4{
+    margin-top: 10px;
+}
+
+h2{
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+
+#locations-image{
+    height: 500px;
+    width: 1200px;
+    object-fit: cover;
+    object-position: 50% 25%;
+    overflow: hidden;
+}
+
+#locations{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#location-text{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+#location-container-wrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+  }
+
+  .location-container {
+    width: 300px;
+    background-color: black;
+    padding: 20px;
+    opacity: 1;
+  }
+
+  .location-container:not(:first-child) {
+    margin-left: 40px;
+  }
+
+
+footer {
+    text-align: center;
+}
+
+footer h2{
+    margin-top: 10px;
+}
+
+#copyright{
+    text-align: left;
+    margin-left: 20px;
+}
